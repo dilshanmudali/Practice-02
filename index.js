@@ -115,3 +115,41 @@
 
 // flattenArr([[1,3],[3,4],[4,3],[4,5],[6,7]])
 
+// Anagram
+
+// const isAnagram = (str1,str2) => {
+//   return helper(str1) === helper(str2)
+// }
+
+// //helper function
+// const helper = (str) => {
+//   return str
+//             .replace(/[^\w]/g,'')
+//             .toLowerCase()
+//             .split('')          
+//             .sort()
+//             .join('')
+// }
+
+// // isAnagram('elbow','below');
+// isAnagram('Dormitory', 'dirty room##');
+
+
+// letter changes
+
+// const letterChanges = (str) =>{
+//   let newStr = str.toLowerCase().replace(/[a-z]/gi, function(char){
+//     if(char === 'z' || char === 'Z'){
+//       return 'a'
+//     }
+//     else{
+//       return String.fromCharCode(char.charCodeAt() + 1)
+//     }
+//   })
+//   newStr = newStr.replace(/a|e|i|o|u/gi, function(vowel){
+//     return vowel.toUpperCase()
+//   })
+//   return newStr;
+// }
+
+// letterChanges('hello there')
